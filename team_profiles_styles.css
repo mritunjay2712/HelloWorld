@@ -1,0 +1,140 @@
+/* team_profiles_styles.css */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/waltographUI.ttf') format('truetype');
+}
+body {
+    font-family: 'CustomFont', Arial, sans-serif; 
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background-image: url("/bgblack.jpg");
+}
+
+header {
+    background-color: #33333394;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    background: linear-gradient(to bottom, rgb(137, 137, 137), rgba(255, 255, 255, 0));
+
+}
+.header-text {
+    color: #fff;
+    /* display: inline;
+    margin-left: 10px; */
+}
+.logo {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav {
+    text-align: center;
+    flex: 0.8;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    justify-content: center;
+    font-size: larger;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+main {
+    padding: 20px;
+    color: #ffffff;
+}
+
+.heading {
+    text-align: center;
+}
+
+.profile-box {
+    display: inline-block;
+    background-color: #f9f3f3c0;
+    color: #1d1818;
+    margin: 10px;
+    padding: 20px;
+    border-radius:20px;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    font-size: medium;
+    border-radius: 30px;
+    /* background: #e0e0e0; */
+    box-shadow:  20px 20px 50px #5a5a5a,
+                -20px -20px 50px #ffffff17;
+}
+
+.profile-icon img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    /* border: 3px solid #000000; */
+    box-shadow: 5px 5px 13px #0e0b0b;
+}
+
+footer {
+    /* background-color: #333333dc; */
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    /* bottom: 0px; */
+    width: 100%;
+    /* background: linear-gradient(to top, rgb(137, 137, 137), rgba(255, 255, 255, 0)); */
+}
+@keyframes slideTop {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-box {
+    /* ...existing styles... */
+    animation: slideTop 1s ease-in-out;
+    transition: transform 0.3s;
+}
+
+.profile-box:hover {
+    transform: scale(1.1);
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}

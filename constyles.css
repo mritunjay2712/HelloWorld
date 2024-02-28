@@ -1,0 +1,134 @@
+/* Reset some default styles */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/waltographUI.ttf') format('truetype');
+}
+body {
+    background-image: url('/bgblack.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'CustomFont', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    /* font-family: Arial, sans-serif; */
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #33333394;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    background: linear-gradient(to bottom, rgb(137, 137, 137), rgba(255, 255, 255, 0));
+
+}
+
+.logo {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav {
+    text-align: center;
+    flex: 0.8;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    justify-content: center;
+    font-size: larger;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+
+
+
+
+main {
+    background-color: rgba(255, 255, 255, 0.544);
+    max-width: 600px; /* Adjust the width of the main content as needed */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    align-self: center;
+}
+
+.contact-info, .contact-form {
+    margin-bottom: 20px;
+}
+
+.contact-info h2, .contact-form h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+}
+
+.address p, .contact-form label {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+/* Sidebar styles */

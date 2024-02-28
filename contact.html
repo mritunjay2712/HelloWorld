@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/constyles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/logo.ico" alt="Logo" class="logo-image">
+            <h1 class="header-text">Hell0world</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="/team_profiles.html">Team</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>If you have any questions or inquiries, please don't hesitate to get in touch with us.</p>
+            <address>
+                <style>p{color: black;}</style>
+                <p><strong>Address:</strong> 123 Main Street, City, State, Zip Code</p>
+                <p><strong>Email:</strong> <a href="mailto:contact@example.com">Hell0world@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+123456789">+123-456-789</a></p>
+            </address>
+        </section>
+        <section class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="process_contact.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy; 2023 Technical Development Community</p>
+        <style>.copyright{color: aliceblue;
+                        margin-left: 10px;}</style>
+    </footer>
+    <script src="conscript.js"></script> <!-- Include JavaScript file -->
+</body>
+</html>
